@@ -19,21 +19,49 @@
   <link rel="stylesheet" href="./css/style.css">
   <title>Frontend Mentor | Article preview component</title>
 </head>
-<body>
+<body class="flex"> <!-- The body has this class to center the card -->
   
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+  <main class="card">
+    <section class="card__img"></section>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+    <section class="card__info">
+      <!-- This is an h1 because most of Frontend Mentor's challenges requiere at least one h1 -->
+      <h1 class="card__info__title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+      <p class="card__info__text fs-body-copy">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
 
-  Michelle Appleton
-  28 Jun 2020
+      <div class="card__info__avatar flex">
+        <div class="card__info__avatar__container flex">
+          <img src="./assets/images/avatar-michelle.jpg" 
+               alt="Michelle's profile picture" 
+              class="card__info__avatar__container__pfp"
+              >
 
-  Share
+          <div class="card__info__avatar__container__container">
+            <h2 class="card__info__avatar__container__container__name fs-body-copy">Michelle Appleton</h2>
+            <p class="card__info__avatar__container__container__date fs-body-copy">28 Jun 2020</p>
+          </div>
+        </div>
   
-  <footer class="attribution">
+        <!-- Share button -->
+        <i class="fa-sharp fa-solid fa-share share-btn"></i>
+        
+        <!-- Social icons when share button is clicked -->
+        <div class="card__info__avatar__socials">
+          <p class="card__info__avatar__socials__text fs-body-copy">Share</p>
+
+          <a href="#"><img src="./assets/images/icon-facebook.svg" alt="" class="card__info__avatar__socials__icon"></a>
+          <a href="#"><img src="./assets/images/icon-twitter.svg" alt="" class="card__info__avatar__socials__icon"></a>
+          <a href="#"><img src="./assets/images/icon-pinterest.svg" alt="" class="card__info__avatar__socials__icon"></a>
+          
+          <!-- Triangle shape -->
+          <div class="triangle"></div>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+
+  <footer class="footer">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#" target="_blank">Fernando Pérez</a>.
   </footer>
